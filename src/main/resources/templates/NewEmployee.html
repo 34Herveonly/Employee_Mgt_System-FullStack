@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <h2>Register New Employee </h2>
+
+<form action="#" th:action="@{/saveEmployee}"
+      th:object="${newEmployee}"
+     method="post">
+    <div class="mb-3">
+        <label  for="firstname" class="form-label"> First Name</label>
+        <input type="text" class="form-control mb-4 col-4" id="firstname" name="firstname"
+               placeholder="enter firstname" >
+
+
+            <label  for="lastname" class="form-label"> Last Name</label>
+            <input type="text" class="form-control mb-4 col-4" id="lastname" name="lastname"
+                   placeholder="enter lastname" >
+
+        <label  for="email" class="form-label"> Email</label>
+        <input type="text" class="form-control mb-4 col-4" id="email" name="email"
+               placeholder="enter email" >
+
+
+        <label  for="age" class="form-label"> Age</label>
+        <input type="text" class="form-control mb-4 col-4" id="age" name="age"
+               placeholder="enter age" >
+
+
+        <label  for="phone" class="form-label"> Phone</label>
+        <input type="text" class="form-control mb-4 col-4" id="phone" name="phone"
+               placeholder="enter phone" >
+
+        <label  for="Salary" class="form-label"> Salary</label>
+        <input type="text" class="form-control mb-4 col-4" id="Salary" name="Salary"
+               placeholder="enter Salary" >
+    </div>
+
+    <button type="submit" class="btn btn-info col-2">Register Employee</button>
+
+</form>
+</div>
+
+</body>
+</html>
